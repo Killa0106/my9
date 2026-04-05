@@ -275,9 +275,9 @@ export async function searchBangumiSubjects(
     filter: {},
   };
 
-  if (Array.isArray(kindMeta.search.typeFilter) && kindMeta.search.typeFilter.length > 0) {
-    requestBody.filter.type = kindMeta.search.typeFilter;
-  }
+  // if (Array.isArray(kindMeta.search.typeFilter) && kindMeta.search.typeFilter.length > 0) {
+  //   requestBody.filter.type = kindMeta.search.typeFilter;
+  // }
 
   const response = await fetch(`${BANGUMI_API_BASE_URL}/v0/search/subjects?limit=20`, {
     method: "POST",
